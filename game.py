@@ -2,7 +2,7 @@ import tic_tac_toe as t
 import bot as b
 import bot_data_update as bdu
 
-while True:
+def main():
     #bot
     bot_row, bot_col = t.bot_input()
 
@@ -16,14 +16,14 @@ while True:
     if winner == True:
         print("Bot Wins")
         bdu.update("bot wins")
-        break
+        exit()
     
     draw = t.draw()
 
     if draw == True:
         print("Draw")
         bdu.update("draw")
-        break
+        exit()
 
     #player
     player_row, player_col = t.player_input()
@@ -41,11 +41,15 @@ while True:
     if winner == True:
         print("Player Wins")
         bdu.update("player wins")
-        break
+        exit()
 
     draw = t.draw()
 
     if draw == True:
         print("Draw")
         bdu.update("draw")
-        break
+        exit()
+
+if __name__ == '__main__':
+    while True:
+        main()
