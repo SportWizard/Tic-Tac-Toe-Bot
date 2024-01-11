@@ -1,6 +1,6 @@
 import random as r
 
-f = open("D:\Codes\Python\Tic Tac Toe Bot\\bot_data.txt", "r")
+f = open("bot_data.txt", "r")
 data = f.readline().split(",")
 f.close()
 
