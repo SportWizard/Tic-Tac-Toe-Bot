@@ -18,6 +18,6 @@ def update(winner):
     for n in data:
         data_string += n + ","
     
-    f = open("D:\Codes\Python\Tic Tac Toe Bot\\bot_data.txt", "w")
+    f = open("bot_data.txt", "w")
     f.write(data_string[:-1])
     f.close()
